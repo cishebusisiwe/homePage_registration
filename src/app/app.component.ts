@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-Registration';
+  register(){
+    let data ={id: 1, name: 'xyz' }
+    localStorage.setItem('User', JSON.stringify(data))
+
+    
+  }
 }
